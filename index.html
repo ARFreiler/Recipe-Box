@@ -7,17 +7,27 @@
       href="https://unpkg.com/@primer/css@^16.0.0/dist/primer.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="stylesheet.css"/>
     <title>Recipe Box</title>
   </head>
   <body>
+
   <header>
       <div class="header">
         <img src="Images/RBox.jpg" alt="Image of a recipe box." />
         <h1>Recipe Box</h1>
       </div>
     </header>
-
+  
+    <section id="backgroundImage">
+      <div id="searchSection">
+      <h2>Search Recipe's</h2>
+      <form>
+        <input class="form-control input-lg" type="text" placeholder="What would you like to make?" aria-label="Large input" />
+      </form>
+      <button class="btn" type="button">Search</button>
+    </div>
+    </section>
 <!-- This is section displays search results -->
   <section id="results" class="d-flex" >
     <div id="img-card" class="border">
@@ -29,7 +39,6 @@
 
     </div>
   </section>
-
 
     <script src="“script.js”"></script>
   </body>
