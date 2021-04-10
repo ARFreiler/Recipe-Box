@@ -3,7 +3,7 @@ header {
 }
 
 #backgroundImage {
-   background-image: url('Recipe-Image.png');
+   background-image: url('./Images/Recipe-Image.png');
    background-repeat: no-repeat;
    background-size: 500px auto;
    margin: 50% 50%;
