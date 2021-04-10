@@ -1,6 +1,11 @@
+
 // Input 
 var searchInput;
-// var searchInput = $("#search");
+// var searchInput = $("#form");
+
+const recipeSuggestions = ['Asparagus', 'Bruscetta', 'Babaganoush', 'Baked Beans', 'Cabbage', 'Carrots', 'Celery', 'Chicken', 'Chimichnaga', 'Curry', 'Duck', 'Dumplings', 'Enchilada', 'Edamame', 'Fajita', 'Falafel', 'Gnocchi', 'Guacamole', 'Gumbo', 'Halibut', 'Huevos Rancheros', 'Hummus', 'Jumbalaya', 'Kabobs', 'Linguini', 'Lasagna', 'Mahimahi', 'Mackerel', 'Meatballs', 'Naan', 'Nachos', 'Nuggets', 'Oatmeal', 'Onigiri', 'Osumashi', 'Pancakes', 'Pizza', 'Polenta', 'Quesadilla', 'Quiche', 'Ramen', 'Ratatouille', 'Reuben', 'Sashimi', 'Souvlaki', 'Sushi', 'Tilapia', 'Tiramisu', 'Tofu', 'Udon', 'Umami', 'Venison', 'Vermicelli', 'Wasabi', 'Xocolatl', 'Yogurt', 'Ziti'];
+
+var searchInput = 'cheeseburger';
 
 var giphyApiKey = 'Nu17pPTvnHN3CycPBGJ7k9FxfSLOYlE5&q';
 var requestGif = 'https://api.giphy.com/v1/gifs/search?api_key=' + giphyApiKey + '=' + searchInput;
@@ -42,6 +47,9 @@ getRecipeApi();
 // Event listener
 $('#btn').on('click', function(event){
     event.preventDefault();
-    searchInput = $("#search").val();
+    searchInput = $("#form").val();
     console.log(searchInput);
 });
+
+getRecipeApi();
+

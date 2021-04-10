@@ -1,14 +1,97 @@
 #backgroundImage{
-   background-image:url('Recipe-Image.png'); 
-   background-repeat: no-repeat;
-   background-size: 500px auto; 
-   margin: 50% 50%;
-   width: 800px;
+   width: 100%;
    height: 500px;
+   text-align: center;
+   background-repeat: no-repeat;
+   background-size: 100%;
+
+   
+ box-sizing: border-box;
 }
 
-#searchSection{
-   margin: 20% -10%;
+#searchSection h2{
+   font-size: 80px;
+   font-weight: 600;
+   margin-top: 8%;
+   margin-bottom: 5%;
    text-align: center;
 }
 
+#searchSection form{
+   text-align: center;
+   margin-top: 3%;
+   margin-bottom: 5%;
+}
+
+#searchSection button{
+   margin-top: 10% 0%;
+   margin-left: 45%;
+}
+
+#results {
+   margin-top: 3%;
+   box-sizing: border-box;
+   border: none ; 
+ 
+}
+
+
+header h1{
+   font-family: 'Rochester', cursive;
+   font-size: 55px;
+   text-align: center;
+}
+
+
+#backgroundImage h2{
+   font-size: 40px ;
+   text-align: center;
+   font-family: 'Rochester', cursive;
+}
+
+#backgroundImage {
+   background-image: url('./Images/Recipe-Image.png');
+   background-repeat: no-repeat;
+   background-size: 500px auto;
+   width: 100%;
+   height: 500px; 
+   text-align: center;
+   background-repeat: no-repeat;
+   background-size: 50%; 
+   box-sizing: border-box;
+}
+
+#searchSection {
+   margin: 20% -10%;
+   text-align: center;
+}
+#boxing{
+   margin: 8% 0%;
+}
+
+
+.form-control, input-lg{
+   width: 60%;
+   height: auto;
+   margin:5%; 
+}
+
+.btn {
+   width: 15%;
+   height: auto;
+   margin-bottom: 3%;
+}
+
+#resultBox{
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin:0%;
+}
+
+#resultBox .col-6{
+   text-align: center;
+   width: 100%;
+   height: auto;
+   margin:1% 0%;
+}

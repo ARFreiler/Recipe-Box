@@ -7,38 +7,93 @@
       href="https://unpkg.com/@primer/css@^16.0.0/dist/primer.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="stylesheet.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rochester&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheet.css" />
     <title>Recipe Box</title>
   </head>
   <body>
 
-  <header>
-      <div class="header">
-        <img src="Images/RBox.jpg" alt="Image of a recipe box." />
-        <h1>Recipe Box</h1>
+    <!-- this is the header of the page in the first column  -->
+    
+    
+    <header>
+      <div class="border">
+        <div class="header" class="col-6 p-2 mx-auto border">
+          <h1>Recipe Box</h1>
+        </div>
       </div>
-    </header>
-  
-    <section id="backgroundImage">
-      <div id="searchSection">
+
+
+  </header>
+
+  <!-- this is the search section of the page in the second column  -->
+
+
+  <div id="backgroundImage" class="border">
+    <div  id ="boxing" class="col-6 p-2 mx-auto border">
       <h2>Search Recipe's</h2>
-      <form>
-        <input id="search" class="form-control input-lg" type="text" placeholder="What would you like to make?" aria-label="Large input" />
+
+      <form id="form">
+        <input class="form-control input-lg" type="text" placeholder="What's would you like to eat?" aria-label="Large input" />
       </form>
       <button id="btn" class="btn" type="button">Search</button>
     </div>
-    </section>
+  </div>
+
+  
 <!-- This is section displays search results -->
-  <section id="results" class="d-flex" >
-    <div id="img-card" class="border">
-      <h2>Recipe Name: </h2>
 
-    </div>
-    <div id="recipe-card" class="border">
-      <h2>Recipe Details: </h2>
+<section>
 
+  <div id="resultBox" class="col-6 p-2 mx-auto border">
+
+    <div id="results" class="clearfix">
+      <div class="col-6 float-left px-1">
+        <div class="border p-1">
+          <h2>Recipe Name: </h2>
+        </div>
     </div>
-  </section>
+  </div>
+    <br>
+
+      <div id="img-card" class="clearfix">
+        <div class="col-6 float-left px-1">
+          <div class="border p-1">
+            <h2>Image </h2>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div id="img-card" class="clearfix">
+        <div class="col-6 float-left px-1">
+          <div class="border p-1">
+            <h2>Recipe Details: </h2>
+          </div>
+        </div>
+
+    </section>
+    <!-- This is section displays search results -->
+    <section id="results" class="d-flex">
+      <div id="img-card" class="border">
+        <h2>Recipe Name :</h2>
+      </div>
+      <div id="recipe-card" class="border">
+        <h2>Recipe Details :</h2>
+
+      </div>
+        
+    </div>
+  </div> 
+</section>
+
+
+
+
 
   <!-- Jquery & Javascript -->
   <script
