@@ -12,33 +12,59 @@
   </head>
   <body>
 
-  <header>
-      <div class="header">
+    <!-- this is the header of the page in the first column  -->
+    <header>
+    <div class="border">
+      <div class="header" class="col-6 p-2 mx-auto border">
         <img src="Images/RBox.jpg" alt="Image of a recipe box." />
         <h1>Recipe Box</h1>
       </div>
-    </header>
-  
-    <section id="backgroundImage">
-      <div id="searchSection">
+    </div>
+  </header>
+
+  <!-- this is the search section of the page in the second column  -->
+  <div id="backgroundImage" class="border">
+    <div id="searchSection" class="col-6 p-2 mx-auto border">
       <h2>Search Recipe's</h2>
       <form>
-        <input class="form-control input-lg" type="text" placeholder="What would you like to make?" aria-label="Large input" />
+        <input class="form-control input-lg" type="text" placeholder="What's for Dinner?" aria-label="Large input" />
       </form>
       <button class="btn" type="button">Search</button>
     </div>
-    </section>
+  </div>
+
+
 <!-- This is section displays search results -->
-  <section id="results" class="d-flex" >
-    <div id="img-card" class="border">
-      <h2>Recipe Name: </h2>
 
-    </div>
-    <div id="recipe-card" class="border">
-      <h2>Recipe Details: </h2>
+<div class="border">
+  <div class="col-6 p-2 mx-auto border">
 
+  <section id="results">
+    <div class="border">
+      <div id="img-card" class="col-6 p-2 mx-auto border">
+        <h2>Recipe Name: </h2>
+      </div>
     </div>
-  </section>
+      
+    <div class="border">
+      <div id="img-card" class="col-6 p-2 mx-auto border">
+        <p>Image </p>
+      </div>
+    </div> 
+
+
+    <div class="border">
+      <div id="img-card" class="col-6 p-2 mx-auto border">
+        <h2>Recipe Details: </h2>
+      </div>
+    </div> 
+    
+    </section>
+  </div>
+</div>
+
+
+
 
     <script src="“script.js”"></script>
   </body>
