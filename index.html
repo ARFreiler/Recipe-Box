@@ -7,65 +7,91 @@
       href="https://unpkg.com/@primer/css@^16.0.0/dist/primer.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="stylesheet.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rochester&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheet.css" />
     <title>Recipe Box</title>
   </head>
   <body>
 
     <!-- this is the header of the page in the first column  -->
+    
+    
     <header>
-    <div class="border">
-      <div class="header" class="col-6 p-2 mx-auto border">
-        <img src="Images/RBox.jpg" alt="Image of a recipe box." />
-        <h1>Recipe Box</h1>
+      <div class="border">
+        <div class="header" class="col-6 p-2 mx-auto border">
+          <img src="Images/RBox.jpg" alt="Image of a recipe box." />
+          <h1>Recipe Box</h1>
+        </div>
       </div>
-    </div>
+
   </header>
 
   <!-- this is the search section of the page in the second column  -->
+
+
   <div id="backgroundImage" class="border">
-    <div id="searchSection" class="col-6 p-2 mx-auto border">
+    <div  id ="boxing" class="col-6 p-2 mx-auto border">
       <h2>Search Recipe's</h2>
-      <form>
-        <input class="form-control input-lg" type="text" placeholder="What's for Dinner?" aria-label="Large input" />
+      <form id="form">
+        <input class="form-control input-lg" type="text" placeholder="What's would you like to eat?" aria-label="Large input" />
       </form>
       <button class="btn" type="button">Search</button>
     </div>
   </div>
 
-
 <!-- This is section displays search results -->
 
-<div class="border">
-  <div class="col-6 p-2 mx-auto border">
 
-  <section id="results">
-    <div class="border">
-      <div id="img-card" class="col-6 p-2 mx-auto border">
-        <h2>Recipe Name: </h2>
-      </div>
+
+
+
+<section>
+
+  <div id="resultBox" class="col-6 p-2 mx-auto border">
+
+    <div id="results" class="clearfix">
+      <div class="col-6 float-left px-1">
+        <div class="border p-1">
+          <h2>Recipe Name: </h2>
+        </div>
     </div>
-      
-    <div class="border">
-      <div id="img-card" class="col-6 p-2 mx-auto border">
-        <p>Image </p>
-      </div>
-    </div> 
-
-
-    <div class="border">
-      <div id="img-card" class="col-6 p-2 mx-auto border">
-        <h2>Recipe Details: </h2>
-      </div>
-    </div> 
-    
-    </section>
   </div>
-</div>
+    <br>
+
+      <div id="img-card" class="clearfix">
+        <div class="col-6 float-left px-1">
+          <div class="border p-1">
+            <h2>Image </h2>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div id="img-card" class="clearfix">
+        <div class="col-6 float-left px-1">
+          <div class="border p-1">
+            <h2>Recipe Details: </h2>
+          </div>
+        </div>
+      </div>
+        
+    </div>
+  </div> 
+</section>
 
 
 
 
-    <script src="“script.js”"></script>
+
+  <!-- Jquery & Javascript -->
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
 </html>
