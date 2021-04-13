@@ -16,13 +16,11 @@ function getGifApi(){
     .then(function (response){
         return response.json();
     })
-
     .then(function (data){
         console.log(data.data[0].images.original.url);
     })
 }
-// getGifApi();
-
+getGifApi();
 
 // Recipe API
 function getRecipeApi(){
@@ -31,18 +29,18 @@ function getRecipeApi(){
             return response.json();
     })
         .then(function (data){
+            console.log(data.data)
             console.log(data.recipes[0].instructions)
         })
 
 };
-// getRecipeApi();
-
+getRecipeApi();
 
 // Event listener
 $('#btn').on('click', function(event){
     event.preventDefault();
     searchInput = $("#search-input").val();
-    console.log(searchInput);
+    getGifApi(searchInput);
 });
 
 
