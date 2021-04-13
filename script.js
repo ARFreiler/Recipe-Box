@@ -18,29 +18,34 @@ $('#btn').on('click', function(event){
 });
 
 // Giphy API
+
 function getGifApi(searchInput){
     var requestGif = `https://api.giphy.com/v1/gifs/search?api_key=${giphyApiKey}=${searchInput}`
     fetch(requestGif)
-    .then(function (response){
-        return response.json();
-    })
+        .then(function (response) {
+            return response.json();
+        })
 
-    .then(function (data){
-        console.log(data.data[0].images.original.url);
-    })
+        .then(function (data) {
+            console.log(data.data[0].images.original.url);
+        })
 }
-// getGifApi();
+getGifApi();
 
 
 // Recipe API
+
 function getRecipeApi(searchInput){
     var requestFood = `https://api.spoonacular.com/recipes/random?number=1&tags=${searchInput}&apiKey=${recipeApiKey}`;
     fetch(requestFood)
-        .then( function (response){
+        .then(function (response) {
             return response.json();
     })
         .then(function (data){
             console.log(data.recipes[0].title)
+
+        })
+        .then(function (data) {
             console.log(data.recipes[0].instructions)
             for(var i=0; i<data.recipes[0].extendedIngredients.length; i++ ){
                 console.log(data.recipes[0].extendedIngredients[i].originalString);
@@ -50,9 +55,18 @@ function getRecipeApi(searchInput){
      
 
 };
-// getRecipeApi();
+getRecipeApi();
 
 
+
+
+
+// Event listener
+$('#btn').on('click', function (event) {
+    event.preventDefault();
+    searchInput = $("#search-input").val();
+    console.log(searchInput);
+});
 
 
 
