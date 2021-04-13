@@ -28,7 +28,6 @@ function getGifApi(searchInput){
     .then(function (data){
         console.log(data.data[0].images.original.url);
     })
-
 }
 // getGifApi();
 
@@ -41,8 +40,14 @@ function getRecipeApi(searchInput){
             return response.json();
     })
         .then(function (data){
+            console.log(data.recipes[0].title)
             console.log(data.recipes[0].instructions)
+            for(var i=0; i<data.recipes[0].extendedIngredients.length; i++ ){
+                console.log(data.recipes[0].extendedIngredients[i].originalString);
+            }
         })
+
+     
 
 };
 // getRecipeApi();
