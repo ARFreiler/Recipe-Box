@@ -30,7 +30,7 @@ function getRecipeApi(searchInput){
     fetch(requestFood)
         .then(function (response) {
             return response.json();
-
+        })
         .then(function (data){
             console.log(data.recipes[0].title)
             console.log(data.recipes[0].instructions)
@@ -38,7 +38,6 @@ function getRecipeApi(searchInput){
                 console.log(data.recipes[0].extendedIngredients[i].originalString);
             }
         })
-
 };
 
 // Event listener
