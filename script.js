@@ -18,7 +18,6 @@ $('#btn').on('click', function(event){
 });
 
 // Giphy API
-
 function getGifApi(searchInput){
     var requestGif = `https://api.giphy.com/v1/gifs/search?api_key=${giphyApiKey}=${searchInput}`
     fetch(requestGif)
@@ -30,11 +29,9 @@ function getGifApi(searchInput){
             console.log(data.data[0].images.original.url);
         })
 }
-getGifApi();
 
 
 // Recipe API
-
 function getRecipeApi(searchInput){
     var requestFood = `https://api.spoonacular.com/recipes/random?number=1&tags=${searchInput}&apiKey=${recipeApiKey}`;
     fetch(requestFood)
@@ -43,22 +40,13 @@ function getRecipeApi(searchInput){
     })
         .then(function (data){
             console.log(data.recipes[0].title)
-
-        })
-        .then(function (data) {
             console.log(data.recipes[0].instructions)
             for(var i=0; i<data.recipes[0].extendedIngredients.length; i++ ){
                 console.log(data.recipes[0].extendedIngredients[i].originalString);
             }
         })
 
-     
-
 };
-getRecipeApi();
-
-
-
 
 
 // Event listener
