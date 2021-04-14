@@ -4,8 +4,6 @@
 
 [Description](#description)
 
-[Installation](#installation)
-
 [Credits](#credits)
 
 [Links](#links)
@@ -17,10 +15,6 @@
 ## Description
 
 Recipe Box is an application that allows a user to input a desired meal choice with the expected result of a recipe for said meal. The recipe will be accompanied by an image that corresponds to the meal choice.
-
-## Installation
-
-Open the inde.html file in Chrome web browser.
 
 ## Credits
 
@@ -42,7 +36,8 @@ This application was conceived and written by Diamond Williams, Stephen Kurtz, a
 
 ## License
 
-The MIT License (MIT) Copyright © 2021
+
+The MIT License (MIT) Copyright © 2021 Diamond Williams, Stephen Kurtz, & Ashleigh Freiler
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
