@@ -48,12 +48,14 @@ function getRecipeApi(searchInput){
             titleCard.appendChild(title);
 
             // recipe instructions
+            console.log(data.recipes[0].instructions);
             var recipeCard = document.getElementById('recipe-card');
             var instructions = document.getElementById('instructions');
-            instructions.textContent = data.recipes[0].instructions;
+            instructions.innerHTML = data.recipes[0].instructions;
             recipeCard.appendChild(instructions);
 
             var ingredients = document.getElementById('ingredients');
+            ingredients.innerHTML = '';
             for(var i=0; i<data.recipes[0].extendedIngredients.length; i++ ){
             // recipe ingredients
                 var li = document.createElement('li');
@@ -67,7 +69,7 @@ function getRecipeApi(searchInput){
 $('#btn').on('click', function(event){
     event.preventDefault();
     searchInput = $("#search-input").val();
-    console.log(searchInput);
+    document.getElementById('display').style.display = 'block';
 
     getRecipeApi(searchInput); 
     getGifApi(searchInput); 
