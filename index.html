@@ -47,28 +47,34 @@
 
   <div id="resultBox" class="col-6 p-2 mx-auto ">
 
-    <div id="results" class="clearfix">
+    <!-- TITLE -->
+    <div class="clearfix">
       <div class="col-6 float-left px-1">
-        <div class="border-bottom p-1">
-          <h2>Recipe Name: </h2>
+        <div id="title-card" class="border-bottom p-1">
+            <h3 id="title"></h3>
         </div>
     </div>
   </div>
     <br>
 
-      <div id="img-card" class="clearfix">
+    <!-- IMAGE -->
+      <div class="clearfix">
         <div class="col-6 float-left px-1">
           <div class="border-bottom p-1">
             <h2>Image </h2>
+            <div id="img-card"></div>
           </div>
         </div>
       </div>
       <br>
 
-      <div id="img-card" class="clearfix">
+      <!-- RECIPE -->
+      <div  class="clearfix">
         <div class="col-6 float-left px-1">
-          <div class="border-bottom p-1">
+          <div id="recipe-card" class="border-bottom p-1">
             <h2>Recipe Details: </h2>
+            <p id="instructions"></p>
+            <ul id="ingredients"></ul>
           </div>
         </div>
 

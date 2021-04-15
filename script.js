@@ -12,6 +12,8 @@ var recipeApiKey = 'a9fa952927f248ee87d292041c30840d';
 
 // Giphy API
 function getGifApi(searchInput){
+    
+    
     var requestGif = `https://api.giphy.com/v1/gifs/search?api_key=${giphyApiKey}=${searchInput}`
     fetch(requestGif)
         .then(function (response) {
@@ -19,7 +21,14 @@ function getGifApi(searchInput){
         })
 
         .then(function (data) {
-            console.log(data.data[0].images.original.url);
+            var imgCard = document.getElementById('img-card');
+            imgCard.innerHTML = '';
+
+            var giphyImg = document.createElement('img');
+            var randomizer = Math.floor(Math.random() * 40);
+
+            giphyImg.setAttribute('src', data.data[randomizer].images.original.url)
+            imgCard.appendChild(giphyImg);
         })
 }
 
@@ -32,10 +41,24 @@ function getRecipeApi(searchInput){
             return response.json();
         })
         .then(function (data){
-            console.log(data.recipes[0].title)
-            console.log(data.recipes[0].instructions)
+            // recipe title
+            var titleCard = document.getElementById('title-card');
+            var title = document.getElementById('title');
+            title.textContent = data.recipes[0].title;
+            titleCard.appendChild(title);
+
+            // recipe instructions
+            var recipeCard = document.getElementById('recipe-card');
+            var instructions = document.getElementById('instructions');
+            instructions.textContent = data.recipes[0].instructions;
+            recipeCard.appendChild(instructions);
+
+            var ingredients = document.getElementById('ingredients');
             for(var i=0; i<data.recipes[0].extendedIngredients.length; i++ ){
-                console.log(data.recipes[0].extendedIngredients[i].originalString);
+            // recipe ingredients
+                var li = document.createElement('li');
+                li.textContent = data.recipes[0].extendedIngredients[i].originalString;
+                ingredients.appendChild(li);
             }
         })
 };
