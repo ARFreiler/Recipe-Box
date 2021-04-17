@@ -26,9 +26,9 @@ Recipe Box is an application that allows a user to input a desired meal choice w
 
 ## Links
 
-[Repository]()
+[Repository](https://github.com/ARFreiler/Recipe-Box)
 
-[Deployed Application]()
+[Deployed Application](https://arfreiler.github.io/Recipe-Box/)
 
 ## Authors
 
