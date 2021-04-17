@@ -14,7 +14,7 @@
 
 ## Description
 
-Recipe Box is an application that allows a user to input a desired meal choice with the expected result of a recipe for said meal. The recipe will be accompanied by an image that corresponds to the meal choice.
+Recipe Box is an application that allows a user to enter an ingredient or genre of cuisine that they wish to cook. The result of the query will be a random recipe corresponding to their search, with an accompanying GIF.
 
 ## Credits
 
